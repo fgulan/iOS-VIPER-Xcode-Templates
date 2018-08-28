@@ -12,7 +12,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-final class ___VARIABLE_moduleName___ViewController: UIViewController {
+final class ___VARIABLE_moduleName___ViewController: BaseViewController {
 
     private let _disposeBag = DisposeBag()
 
