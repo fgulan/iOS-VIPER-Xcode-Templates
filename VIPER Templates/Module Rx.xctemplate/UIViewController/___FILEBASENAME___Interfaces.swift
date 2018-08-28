@@ -12,29 +12,29 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-enum ___VARIABLE_moduleName___NavigationOption {
+enum ___VARIABLE_moduleName___ {
+    
+    struct ViewOutput {
+    }
+
+    struct ViewInput {
+    }
+
+    enum NavigationOption {
+    }
 }
 
 protocol ___VARIABLE_moduleName___WireframeInterface: WireframeInterface {
-    func navigate(using option: Driver<___VARIABLE_moduleName___NavigationOption>)
-    func navigate(to option: ___VARIABLE_moduleName___NavigationOption)
+    func navigate(using option: Driver<___VARIABLE_moduleName___.NavigationOption>)
+    func navigate(to option: ___VARIABLE_moduleName___.NavigationOption)
 }
 
 protocol ___VARIABLE_moduleName___ViewInterface: ViewInterface {
 }
 
 protocol ___VARIABLE_moduleName___PresenterInterface: PresenterInterface {
-    func setup(with output: ___VARIABLE_moduleName___ViewOutput) -> ___VARIABLE_moduleName___ViewInput
+    func setupBinding(with output: ___VARIABLE_moduleName___.ViewOutput) -> ___VARIABLE_moduleName___.ViewInput
 }
 
 protocol ___VARIABLE_moduleName___InteractorInterface: InteractorInterface {
-}
-
-struct ___VARIABLE_moduleName___Input {
-}
-
-struct ___VARIABLE_moduleName___ViewInput {
-}
-
-struct ___VARIABLE_moduleName___ViewOutput {
 }

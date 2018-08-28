@@ -16,12 +16,12 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframe {
 
     // MARK: - Private properties -
 
-    private let storyboard = UIStoryboard(name: <#Storyboard name#>, bundle: nil)
+    private let _storyboard = UIStoryboard(name: <#Storyboard name#>, bundle: nil)
 
     // MARK: - Module setup -
 
     init() {
-        let moduleViewController = storyboard.instantiateViewController(ofType: ___VARIABLE_moduleName___ViewController.self)
+        let moduleViewController = _storyboard.instantiateViewController(ofType: ___VARIABLE_moduleName___ViewController.self)
         super.init(viewController: moduleViewController)
         
         let interactor = ___VARIABLE_moduleName___Interactor()
@@ -35,10 +35,10 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframe {
 
 extension ___VARIABLE_moduleName___Wireframe: ___VARIABLE_moduleName___WireframeInterface {
     
-    func navigate(using option: Driver<___VARIABLE_moduleName___NavigationOption>) {
+    func navigate(using option: Driver<___VARIABLE_moduleName___.NavigationOption>) {
         subscribe(to: option, unowning: self, navigationBlock: ___VARIABLE_moduleName___Wireframe.navigate(using: ))
     }
 
-    func navigate(to option: ___VARIABLE_moduleName___NavigationOption) {
+    func navigate(to option: ___VARIABLE_moduleName___.NavigationOption) {
     }
 }

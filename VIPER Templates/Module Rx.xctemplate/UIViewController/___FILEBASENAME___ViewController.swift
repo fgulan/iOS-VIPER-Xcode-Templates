@@ -14,7 +14,7 @@ import RxCocoa
 
 final class ___VARIABLE_moduleName___ViewController: UIViewController {
 
-    private let disposeBag = DisposeBag()
+    private let _disposeBag = DisposeBag()
 
     // MARK: - Public properties -
 
@@ -24,7 +24,7 @@ final class ___VARIABLE_moduleName___ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
+        _setupView()
     }
 	
 }
@@ -36,9 +36,9 @@ extension ___VARIABLE_moduleName___ViewController: ___VARIABLE_moduleName___View
 
 private extension ___VARIABLE_moduleName___ViewController {
 
-    func setupView() {
-        let output = ___VARIABLE_moduleName___ViewOutput()
-        let input = presenter.setup(with: output)
+    func _setupView() {
+        let output = ___VARIABLE_moduleName___.ViewOutput()
+        let input = presenter.setupBinding(with: output)
     }
 
 }

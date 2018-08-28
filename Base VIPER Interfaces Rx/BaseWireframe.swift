@@ -11,7 +11,7 @@ class BaseWireframe {
 
     private unowned var _viewController: UIViewController
     
-    //to retain view controller reference upon first access
+    // To retain view controller reference upon first access
     private var _temporaryStoredViewController: UIViewController?
 
     init(viewController: UIViewController) {
@@ -59,11 +59,11 @@ extension UIViewController {
 extension UINavigationController {
     
     func pushWireframe(_ wireframe: BaseWireframe, animated: Bool = true) {
-        self.pushViewController(wireframe.viewController, animated: animated)
+        pushViewController(wireframe.viewController, animated: animated)
     }
     
     func setRootWireframe(_ wireframe: BaseWireframe, animated: Bool = true) {
-        self.setViewControllers([wireframe.viewController], animated: animated)
+        setViewControllers([wireframe.viewController], animated: animated)
     }
     
 }
