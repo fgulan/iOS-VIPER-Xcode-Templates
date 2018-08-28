@@ -16,7 +16,7 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframe {
 
     // MARK: - Private properties -
 
-    private let _storyboard = UIStoryboard(name: <#Storyboard name#>, bundle: nil)
+    private let _storyboard = UIStoryboard(name: "___VARIABLE_moduleName___", bundle: nil)
 
     // MARK: - Module setup -
 
