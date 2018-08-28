@@ -36,7 +36,7 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframe {
 extension ___VARIABLE_moduleName___Wireframe: ___VARIABLE_moduleName___WireframeInterface {
     
     func navigate(using option: Driver<___VARIABLE_moduleName___.NavigationOption>) {
-        subscribe(to: option, unowning: self, navigationBlock: ___VARIABLE_moduleName___Wireframe.navigate(using: ))
+        subscribe(to: option, unowning: self, navigationBlock: ___VARIABLE_moduleName___Wireframe.navigate(to: ))
     }
 
     func navigate(to option: ___VARIABLE_moduleName___.NavigationOption) {
